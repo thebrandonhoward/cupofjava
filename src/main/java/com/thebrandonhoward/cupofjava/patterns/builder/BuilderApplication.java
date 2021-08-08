@@ -4,14 +4,14 @@ public class BuilderApplication {
 
     public static void main(String... args) {
 
-        System.out.println(
-                new House.HouseBuilder()
-                        .color("blue")
-                        .numberOfBedrooms(3)
-                        .numberOfBathrooms(2)
-                        .hasBasement(false)
-                        .build()
-                        .toString() );
+        House house = new House.HouseBuilder()
+                                .color("blue")
+                                .numberOfBedrooms(3)
+                                .numberOfBathrooms(2)
+                                .hasBasement(false)
+                                .build();
+
+        System.out.println( house.toString() );
 
     }
 
