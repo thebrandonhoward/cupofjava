@@ -41,6 +41,24 @@ public class ChainingMain {
                 });
 
         router.send(getCallA());
+
+        router.setReversedCallChain(
+                (call) -> {
+                    try {
+                        return getCallB((Call) call);
+                    } catch (MalformedURLException e) {
+                        throw new RuntimeException(e);
+                    }
+                },
+                (call) -> {
+                    try {
+                        return getCallC((Call) call);
+                    } catch (MalformedURLException e) {
+                        throw new RuntimeException(e);
+                    }
+                });
+
+        router.send(getCallA());
     }
 
     private Call getCallA() throws MalformedURLException {

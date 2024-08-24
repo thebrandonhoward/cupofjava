@@ -27,4 +27,10 @@ public class Router<T> {
                 .reduce((call,nextCall) -> call.andThen(nextCall))
                 .orElse(call -> call);
     }
+
+    public void setReversedCallChain(Function<Call,Call> ...calls) {
+        callChain = Stream.of(calls)
+                .reduce((call,nextCall) -> call.compose(nextCall))
+                .orElse(call -> call);
+    }
 }
