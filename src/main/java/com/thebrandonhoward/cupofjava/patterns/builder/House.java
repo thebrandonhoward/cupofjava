@@ -1,15 +1,10 @@
 package com.thebrandonhoward.cupofjava.patterns.builder;
 
-import lombok.AllArgsConstructor;
-import lombok.ToString;
-
-@AllArgsConstructor
-@ToString
 public class House {
-    private final String color;
-    private final int numberOfBedrooms;
-    private final int numberOfBathrooms;
-    private final boolean hasBasement;
+    private String color;
+    private int numberOfBedrooms;
+    private int numberOfBathrooms;
+    private boolean hasBasement;
 
     public static class HouseBuilder {
         private String color;
@@ -34,9 +29,6 @@ public class House {
             return this;
         }
 
-        public House build() {
-            return new House(this.color, this.numberOfBedrooms, this.numberOfBathrooms, this.hasBasement);
-        }
     }
 
 }

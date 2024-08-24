@@ -1,13 +1,11 @@
 package com.thebrandonhoward.cupofjava;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-@SpringBootApplication
 public class CupofjavaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(CupofjavaApplication.class, args);
+        System.out.println("\u0024");
+        System.out.println("$");
+        System.out.println("\u5706");
     }
 
 }
