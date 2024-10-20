@@ -12,7 +12,9 @@ public class ProductOfArrayExceptSelf {
         24,24,12,4
 
         24,12,8,6
+
         ------------
+
         -1,1,0,-3,3
 
         -1,-1,0,0,0
