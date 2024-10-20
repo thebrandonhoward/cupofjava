@@ -1,4 +1,4 @@
-package com.thebrandonhoward.cupofjava.challenges;
+package com.thebrandonhoward.cupofjava.challenges.leetcode75.arraystring;
 
 //1 | https://leetcode.com/problems/merge-strings-alternately/?envType=study-plan-v2&envId=leetcode-75
 public class MergeStringsAlternately {

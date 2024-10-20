@@ -1,4 +1,4 @@
-package com.thebrandonhoward.cupofjava.challenges;
+package com.thebrandonhoward.cupofjava.challenges.leetcode75.arraystring;
 
 import java.util.Arrays;
 import java.util.HashSet;

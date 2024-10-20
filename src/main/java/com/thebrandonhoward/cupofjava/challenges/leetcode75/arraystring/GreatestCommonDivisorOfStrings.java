@@ -1,4 +1,4 @@
-package com.thebrandonhoward.cupofjava.challenges;
+package com.thebrandonhoward.cupofjava.challenges.leetcode75.arraystring;
 
 //2 | https://leetcode.com/problems/greatest-common-divisor-of-strings/?envType=study-plan-v2&envId=leetcode-75
 public class GreatestCommonDivisorOfStrings {

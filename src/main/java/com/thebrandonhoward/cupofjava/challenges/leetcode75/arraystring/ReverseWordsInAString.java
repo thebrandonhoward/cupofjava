@@ -1,4 +1,4 @@
-package com.thebrandonhoward.cupofjava.challenges;
+package com.thebrandonhoward.cupofjava.challenges.leetcode75.arraystring;
 
 //6 | https://leetcode.com/problems/reverse-words-in-a-string/submissions/1427805165/?envType=study-plan-v2&envId=leetcode-75
 public class ReverseWordsInAString {

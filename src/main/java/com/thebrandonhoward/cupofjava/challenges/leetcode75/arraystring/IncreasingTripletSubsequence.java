@@ -1,4 +1,4 @@
-package com.thebrandonhoward.cupofjava.challenges;
+package com.thebrandonhoward.cupofjava.challenges.leetcode75.arraystring;
 
 //8 | https://leetcode.com/problems/increasing-triplet-subsequence/submissions/1428791646/?envType=study-plan-v2&envId=leetcode-75
 public class IncreasingTripletSubsequence {
