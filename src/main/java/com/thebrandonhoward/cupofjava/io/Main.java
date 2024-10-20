@@ -23,7 +23,7 @@ public class Main {
             fileOutputStream.flush();
             fileOutputStream.close();
 
-            String phoneNumber = "255_6926";
+            String phoneNumber = "555_5035";
             dataOutputStream.flush();
             dataOutputStream.writeChars(phoneNumber);
             dataOutputStream.flush();
