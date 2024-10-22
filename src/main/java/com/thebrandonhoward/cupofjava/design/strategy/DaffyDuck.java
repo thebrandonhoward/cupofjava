@@ -13,7 +13,7 @@ public class DaffyDuck extends Duck {
         this.quackBehavior = quackBehavior;
     }
     @Override
-    void display() {
+    public void display() {
         System.out.println("Displaying a daffy duck.");
     }
 

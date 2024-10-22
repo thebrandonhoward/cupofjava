@@ -6,7 +6,7 @@ public class MallardDuck extends Duck {
     FlyBehavior flyBehavior;
     QuackBehavior quackBehavior;
 
-    MallardDuck() {}
+    public MallardDuck() {}
 
     MallardDuck(FlyBehavior flyBehavior, QuackBehavior quackBehavior) {
         this.flyBehavior = flyBehavior;
@@ -14,7 +14,7 @@ public class MallardDuck extends Duck {
     }
 
     @Override
-    void display() {
+    public void display() {
         System.out.println("Displaying a mallard duck.");
     }
 
