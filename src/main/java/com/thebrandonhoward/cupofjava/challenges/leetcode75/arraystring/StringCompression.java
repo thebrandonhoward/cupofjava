@@ -1,4 +1,4 @@
-package com.thebrandonhoward.cupofjava.challenges;
+package com.thebrandonhoward.cupofjava.challenges.leetcode75.arraystring;
 
 //9 | https://leetcode.com/problems/string-compression/submissions/1432994978/?envType=study-plan-v2&envId=leetcode-75
 public class StringCompression {
