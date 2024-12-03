@@ -23,26 +23,28 @@ public class ExcelMain {
             StopWatch watch = new StopWatch();
             watch.start();
 
-            wb.getSheets().forEach(sheet ->
-            {
-                try (Stream<Row> rows = sheet.openStream()) {
+            wb.getSheets()
+                    .forEach(sheet -> {
+                        try (Stream<Row> rows = sheet.openStream()) {
 
-                    rows.skip(1).forEach(r -> {
-                        //BigDecimal num = r.getCellAsNumber(0).orElse(null);
-                        String str = r.getCellAsString(1).orElse(null);
+                            rows.skip(1)
+                                    .forEach(r -> {
+                                        //BigDecimal num = r.getCellAsNumber(0).orElse(null);
+                                        String str = r.getCellAsString(1).orElse(null);
 
-                        //System.out.println("Cell str value :: " + num);
-                        System.out.println("Cell str value :: " + str);
+                                        //System.out.println("Cell str value :: " + num);
+                                        System.out.println("Cell str value :: " + str);
+                                    });
+
+                        }
+                        catch (Exception e) {
+                            e.printStackTrace();
+                        }
                     });
 
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
+            watch.stop();
 
-                watch.stop();
-
-                System.out.println("Processing time :: " + watch.getTime(TimeUnit.MILLISECONDS));
-            });
+            System.out.println("Processing time :: " + watch.getTime(TimeUnit.MILLISECONDS));
         }
     }
 
